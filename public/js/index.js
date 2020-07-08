@@ -27,6 +27,7 @@ form.addEventListener("submit", (e) => {
             const cpyBtn = document.querySelector('.cpy-btn');
             cpyBtn.addEventListener('click', () => {
                 navigator.clipboard.writeText(cpyText.innerText);
+                alert("Copied to Clipboard");
             });
         })
         .catch((error) => {
