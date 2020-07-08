@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 module.exports = async () => {
     try {
-        await mongoose.connect('mongodb+srv://afnan:C6RYUTVjgMKDPrwI@cluster0.tnnav.gcp.mongodb.net/short-url?retryWrites=true&w=majority', {
+        await mongoose.connect(process.env.MONGO, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
             useFindAndModify: false,
