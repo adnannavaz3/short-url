@@ -5,7 +5,6 @@ const urls = require("./routes/urls");
 const app = express();
 
 require("./config/db")();
-
 app.set("view engine", "ejs");
 
 app.use(morgan("dev"));
