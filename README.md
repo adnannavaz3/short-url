@@ -1,3 +1,4 @@
 # short-url
 
-URL shortener application using Express.Js
+URL shortener web application using Express.js
+
